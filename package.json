@@ -11,6 +11,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build", <----------- #1
+    "deploy": "gh-pages -d build", <---------- #2
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
